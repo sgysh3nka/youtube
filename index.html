@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доступ к ресурсу ограничен</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="blocked.png" alt="rkn_blocked_website">
+    <script>fetch('https://api.ipify.org?format=json')
+  .then(res => res.json())
+  .then(data => alert(data.ip));</script>
+</body>
+</html>
